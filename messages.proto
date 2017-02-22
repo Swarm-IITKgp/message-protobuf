@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package swarm;
+
+message Data{
+    // The coordinates of the bot
+    int32 x = 1;
+    int32 y = 2;
+
+    // Velocities of the bot
+    int32 vel_x = 3;
+    int32 vel_y = 4;
+}
