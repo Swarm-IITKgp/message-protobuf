@@ -15,7 +15,6 @@ read: read.cc messages.pb.cc
 
 clean:
 	rm -f proto_middleman
-	rm -f read.cc
 	rm -f messages.pb.cc
 	rm -f messages.pb.h
 	rm -f read
