@@ -96,3 +96,13 @@ where `hi.txt` is the file name where the protobuf message will be
 stored.
 
 Other binaries should follow the same convention.
+
+## Learning about Protobuf
+
+To learn about protobuf, nothing can be better than Google's own
+documentation. Clone the
+[protobuf's github repo](https://github.com/google/protobuf) and read
+the examples in the directory `examples/` and `docs/`.
+
+For a proper tutorial please refer
+[here](https://developers.google.com/protocol-buffers/).
