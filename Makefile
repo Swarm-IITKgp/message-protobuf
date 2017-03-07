@@ -2,9 +2,9 @@ CFLAGS = -g
 LIBS = -L/usr/local/lib -lprotobuf -pthread  -lpthread
 CC = g++
 
-.PHONY: all protoc_middleman read
+.PHONY: all protoc_middleman read write
 
-all: protoc_middleman read
+all: protoc_middleman read write
 
 protoc_middleman: messages.proto
 	protoc --cpp_out=. messages.proto
@@ -12,6 +12,9 @@ protoc_middleman: messages.proto
 
 read: read.cc messages.pb.cc
 	$(CC) $(CFLAGS) read.cc messages.pb.cc -o read $(LIBS)
+
+write: write.cc messages.pb.cc
+	$(CC) $(CFLAGS) write.cc messages.pb.cc -o write $(LIBS)
 
 clean:
 	rm -f protoc_middleman
