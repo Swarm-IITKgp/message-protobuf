@@ -73,7 +73,7 @@ tools as much as we can. We simply use Makefiles.
 
 To compile: 
 
-`make`
+`$ make`
 
 ## Binaries
 
